@@ -1,0 +1,1131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="refresh" content="172795">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>
+    Dashboard - Qualification Round 2011 - Google Code Jam
+  </title>
+  <link rel="stylesheet" type="text/css" href="Magicka_files/base.css">
+  <link rel="stylesheet" type="text/css" href="Magicka_files/dashboard.css">
+  
+  <script src="Magicka_files/ga.js" async="" type="text/javascript"></script><script type="text/javascript" src="Magicka_files/message_en.js"></script>
+  <script type="text/javascript" src="Magicka_files/Dashboard.js"></script>
+  
+  <script type="text/javascript"><!--
+    /**
+     * Initializes GCJ.problems and GCJ.io from Django parameters.
+     * Also initializes the two user specific variables GCJ.isQualified and
+     * GCJ.lastClarSeenTime.
+     * This is the first function called once from GCJ.main().
+     */
+    GCJ.initContestVariables = function () {
+      // Convert Django's 'contest' to 'GCJ.contest'.
+      GCJ.contest.id = "975485";
+      GCJ.contest.name = "Qualification Round 2011";
+      GCJ.contest.version = 0;
+      
+        GCJ.contest.version = 3;
+      
+      GCJ.contest.start_int = 1304722800;
+      GCJ.base_url = '/codejam/contest';
+
+      GCJ.isQualified = 1;
+      GCJ.isLoggedIn = 1;
+      GCJ.hasAnalysis = 0;
+      // Convert Django's 'problems' to JS 'GCJ.problems'.
+      
+        GCJ.problems.push({
+            "id": "1080487",
+            "key": "agxjb2RlamFtLXByb2RyEAsSCHByb2JsZW1zGKf5QQw",
+            "name": "Bot Trust",
+            "type": "default"
+        });
+      
+        GCJ.problems.push({
+            "id": "1026487",
+            "key": "agxjb2RlamFtLXByb2RyEAsSCHByb2JsZW1zGLfTPgw",
+            "name": "Magicka",
+            "type": "default"
+        });
+      
+        GCJ.problems.push({
+            "id": "1059486",
+            "key": "agxjb2RlamFtLXByb2RyEAsSCHByb2JsZW1zGJ7VQAw",
+            "name": "Candy Splitting",
+            "type": "default"
+        });
+      
+        GCJ.problems.push({
+            "id": "992486",
+            "key": "agxjb2RlamFtLXByb2RyEAsSCHByb2JsZW1zGObJPAw",
+            "name": "GoroSort",
+            "type": "default"
+        });
+      
+
+  
+      // Convert Django's 'all_io' to JS 'GCJ.io'.
+      var io;
+      
+        io = new Array();
+        stat = new Array();
+        
+          io.push({
+              "difficulty": 0,
+              "points": 10,
+              "attempts": 0,
+              "secsSolved": -1,
+              "secsPassed": -1
+          });
+        
+          io.push({
+              "difficulty": 1,
+              "points": 10,
+              "attempts": 0,
+              "secsSolved": -1,
+              "secsPassed": -1
+          });
+        
+        GCJ.io.push(io);
+      
+        io = new Array();
+        stat = new Array();
+        
+          io.push({
+              "difficulty": 0,
+              "points": 10,
+              "attempts": 0,
+              "secsSolved": -1,
+              "secsPassed": -1
+          });
+        
+          io.push({
+              "difficulty": 1,
+              "points": 15,
+              "attempts": 0,
+              "secsSolved": -1,
+              "secsPassed": -1
+          });
+        
+        GCJ.io.push(io);
+      
+        io = new Array();
+        stat = new Array();
+        
+          io.push({
+              "difficulty": 0,
+              "points": 10,
+              "attempts": 0,
+              "secsSolved": -1,
+              "secsPassed": -1
+          });
+        
+          io.push({
+              "difficulty": 1,
+              "points": 15,
+              "attempts": 0,
+              "secsSolved": -1,
+              "secsPassed": -1
+          });
+        
+        GCJ.io.push(io);
+      
+        io = new Array();
+        stat = new Array();
+        
+          io.push({
+              "difficulty": 0,
+              "points": 10,
+              "attempts": 0,
+              "secsSolved": -1,
+              "secsPassed": -1
+          });
+        
+          io.push({
+              "difficulty": 1,
+              "points": 20,
+              "attempts": 0,
+              "secsSolved": -1,
+              "secsPassed": -1
+          });
+        
+        GCJ.io.push(io);
+      
+    };
+
+    /**
+     * Returns the current splash page.
+     */
+    GCJ.getSplashPage = function () {
+      return "/codejam";
+    };
+  //--></script>
+</head>
+
+<body onload="GCJ.main()">
+<div id="logo-div">
+  <a href="http://code.google.com/codejam/">
+    <img src="Magicka_files/logo_image1.gif" id="logo" alt="Google Code Jam">
+  </a>
+</div>
+
+<div>
+
+
+<div style="display: none;">
+  <form id="csrf-form-GetInputFile"><div style="display:none;"><input name="csrfmiddlewaretoken" value="ZmM5OWFiOTQ5YzIyNDBiOWI1ZTA3OTIxOWYyNzEzZDZ8MTAyODYwMDk5MzEyMDU4ODU2MjYzfEdldElucHV0RmlsZXwxMzA0NzQ3ODc5NTYwNDQ0" type="hidden"></div>
+    <input name="cmd" value="GetInputFile" type="hidden">
+  </form>
+  <form id="csrf-form-GetProblemText"><div style="display:none;"><input name="csrfmiddlewaretoken" value="MzYxNjhmMDYzOTAwNzY5NmJiYTQ1N2NlODZlNGUwNzd8MTAyODYwMDk5MzEyMDU4ODU2MjYzfEdldFByb2JsZW1UZXh0fDEzMDQ3NDc4Nzk1NjA2NzE=" type="hidden"></div>
+    <input name="cmd" value="GetProblemText" type="hidden">
+  </form>
+  <form id="csrf-form-GetContestAnalysis"><div style="display:none;"><input name="csrfmiddlewaretoken" value="ZjAwODg1NGJkMzEwNWM1ZjIyOGI4MjBjMmQwYjUyMjh8MTAyODYwMDk5MzEyMDU4ODU2MjYzfEdldENvbnRlc3RBbmFseXNpc3wxMzA0NzQ3ODc5NTYwODQy" type="hidden"></div>
+    <input name="cmd" value="GetContestAnalysis" type="hidden">
+  </form>
+  <form id="csrf-form-SubmitAnswer"><div style="display:none;"><input name="csrfmiddlewaretoken" value="MmFjYTYxMzNlNWU3NTNiZDFlZmVlZTc3MzUzZTVmZGV8MTAyODYwMDk5MzEyMDU4ODU2MjYzfFN1Ym1pdEFuc3dlcnwxMzA0NzQ3ODc5NTYxMDA5" type="hidden"></div>
+    <input name="cmd" value="SubmitAnswer" type="hidden">
+  </form>
+  <form id="csrf-form-AskClarification"><div style="display:none;"><input name="csrfmiddlewaretoken" value="ZmFkN2Q3MzY0ZGRiN2I3YzlkMjA5OTY3ODg2NWNjMTF8MTAyODYwMDk5MzEyMDU4ODU2MjYzfEFza0NsYXJpZmljYXRpb258MTMwNDc0Nzg3OTU2MTE2Mg==" type="hidden"></div>
+    <input name="cmd" value="AskClarification" type="hidden">
+  </form>
+  <form id="csrf-form-GetUserStatus"><div style="display:none;"><input name="csrfmiddlewaretoken" value="MDU3YjQzY2Q0N2RhNWM3YmQwZmI2YzQzZWIxNTliYjR8MTAyODYwMDk5MzEyMDU4ODU2MjYzfEdldFVzZXJTdGF0dXN8MTMwNDc0Nzg3OTU2MTMyMw==" type="hidden"></div>
+    <input name="cmd" value="GetUserStatus" type="hidden">
+  </form>
+  <form id="csrf-form-GetClarifications"><div style="display:none;"><input name="csrfmiddlewaretoken" value="NmM4MDYxNTgyOWY1NTMxNTBhOGUzZWI4OWNlNjgzN2R8MTAyODYwMDk5MzEyMDU4ODU2MjYzfEdldENsYXJpZmljYXRpb25zfDEzMDQ3NDc4Nzk1NjE0ODE=" type="hidden"></div>
+    <input name="cmd" value="GetClarifications" type="hidden">
+  </form>
+  <form id="csrf-form-GetSubmissionInfo"><div style="display:none;"><input name="csrfmiddlewaretoken" value="NWNkNzI3MmNiNGZmZTc0MDEwN2NhYzRlNGExMmQ0MWJ8MTAyODYwMDk5MzEyMDU4ODU2MjYzfEdldFN1Ym1pc3Npb25JbmZvfDEzMDQ3NDc4Nzk1NjE2NDM=" type="hidden"></div>
+    <input name="cmd" value="GetSubmissionInfo" type="hidden">
+  </form>
+  <form id="csrf-form-GetScoreboardTops"><div style="display:none;"><input name="csrfmiddlewaretoken" value="ODAyMjhkNTJkNzY4YTFiNmIwNmFiMzY1YTQ4YThmMjR8MTAyODYwMDk5MzEyMDU4ODU2MjYzfEdldFNjb3JlYm9hcmRUb3BzfDEzMDQ3NDc4Nzk1NjE4MDk=" type="hidden"></div>
+    <input name="cmd" value="GetScoreboardTops" type="hidden">
+  </form>
+  <form id="csrf-form-SetClarificationLastSeenTime"><div style="display:none;"><input name="csrfmiddlewaretoken" value="NTgzYmVkMmVmMjc3ZTUxYmRlOWQ0MGIzZDM2YTEyYjN8MTAyODYwMDk5MzEyMDU4ODU2MjYzfFNldENsYXJpZmljYXRpb25MYXN0U2VlblRpbWV8MTMwNDc0Nzg3OTU2MTk2OA==" type="hidden"></div>
+    <input name="cmd" value="SetClarificationLastSeenTime" type="hidden">
+  </form>
+  <form id="csrf-form-GetInput"><div style="display:none;"><input name="csrfmiddlewaretoken" value="ZmVlYTUzOTkxNjEwYjNhMDVlNjNlY2M4YWMwZjIxYjl8MTAyODYwMDk5MzEyMDU4ODU2MjYzfEdldElucHV0fDEzMDQ3NDc4Nzk1NjIxMjU=" type="hidden"></div>
+    <input name="cmd" value="GetInput" type="hidden">
+  </form>
+  <form id="csrf-form-GetOutput"><div style="display:none;"><input name="csrfmiddlewaretoken" value="MWI2OWI4YjQwMGJmMDk0YzA0OGU4MjdmZTI1MWFkMjN8MTAyODYwMDk5MzEyMDU4ODU2MjYzfEdldE91dHB1dHwxMzA0NzQ3ODc5NTYyMzA5" type="hidden"></div>
+    <input name="cmd" value="GetOutput" type="hidden">
+  </form>
+  <form id="csrf-form-GetSource"><div style="display:none;"><input name="csrfmiddlewaretoken" value="YjA0OGRmYmMwZGVlOTZmMWYxZDZkYzllNTMxZWY2MTl8MTAyODYwMDk5MzEyMDU4ODU2MjYzfEdldFNvdXJjZXwxMzA0NzQ3ODc5NTYyNTEy" type="hidden"></div>
+    <input name="cmd" value="GetSource" type="hidden">
+  </form>
+  <form id="csrf-form-GetInitialValues"><div style="display:none;"><input name="csrfmiddlewaretoken" value="OGIxMjkyMTcxYzJhNzYyYWZjZjIwYTkwYTI4NDFlZDJ8MTAyODYwMDk5MzEyMDU4ODU2MjYzfEdldEluaXRpYWxWYWx1ZXN8MTMwNDc0Nzg3OTU2Mjc2Mw==" type="hidden"></div>
+    <input name="cmd" value="GetInitialValues" type="hidden">
+  </form>
+</div>
+
+
+<div style="display: block;" id="dsb-page-body">
+
+<div id="left-panel">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Problem Selection Panel -->
+  <div id="dsb-contest-title">Qualification Round 2011</div>
+  <hr class="dsb-hr">
+  <div>
+    
+    <div id="dsb-problem-tab0" class="dsb-problem-tab-close" tabindex="0" role="button">
+      <div id="dsb-problem-title0" class="dynamic-link">
+        A. Bot Trust
+      </div>
+    </div>
+    
+    <div id="dsb-problem-tab1" class="dsb-problem-tab-open" tabindex="0" role="button">
+      <div id="dsb-problem-title1" class="dynamic-link">
+        B. Magicka
+      </div>
+    </div>
+    
+    <div id="dsb-problem-tab2" class="dsb-problem-tab-close" tabindex="0" role="button">
+      <div id="dsb-problem-title2" class="dynamic-link">
+        C. Candy Splitting
+      </div>
+    </div>
+    
+    <div id="dsb-problem-tab3" class="dsb-problem-tab-close" tabindex="0" role="button">
+      <div id="dsb-problem-title3" class="dynamic-link">
+        D. GoroSort
+      </div>
+    </div>
+    
+  </div>
+  <hr class="dsb-hr">
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div style="display: none;" id="dsb-analysis-button" class="dsb-anal-tab-close" tabindex="0" role="button">
+    <div class="dynamic-link">
+       <div id="dsb-analysis-tab">
+         Contest Analysis
+       </div>
+    </div>
+  </div>
+  <div id="dsb-ask-question-button" class="dsb-clar-tab-close" tabindex="0" role="button">
+    <div class="dynamic-link">
+       <div class="" id="dsb-ask-question-tab">Ask a question</div>
+    </div>
+  </div>
+  <div id="dsb-submissions-button" class="dsb-submissions-tab-close" tabindex="0" role="button">
+    <div class="dynamic-link">
+      <div id="dsb-submissions-tab">
+        View my submissions
+      </div>
+    </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <div class="dsb-mini-tab-wrapper">
+  <div id="dsb-status-div">
+    <div id="dsb-status-header-div" onmouseover="this.style.cursor='pointer'" onclick="GCJ.toggleStatusPanelVisibility();">
+      <img id="dsb-status-panel-button" src="Magicka_files/minus.gif">
+      &nbsp; Submissions
+    </div>
+    <div id="dsb-status-tab" style="display: block;">
+    
+      <div id="problemStatusWrapper0" class="problemStatusWrapper">
+        <div class="dsb-status-problem-title">Bot Trust</div>
+        
+        <!-- Input Stats -->
+        <table class="problemStatus">
+        <tbody>
+          <tr class="inputSetStatus">
+            <td id="inputName0_0" class="inputName">10pt</td>
+            <td class="status">
+              <div id="selfStat0_0" class="dsb-mini-status-non-highlight">3 incorrect attempts</div>
+              <div style="display: block;" id="globalStat0_0" class="globalStat"><b>3929/4789 users</b> correct (82%)</div>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+        
+        <!-- Input Stats -->
+        <table class="problemStatus">
+        <tbody>
+          <tr class="inputSetStatus">
+            <td id="inputName0_1" class="inputName">10pt</td>
+            <td class="status">
+              <div id="selfStat0_1" class="dsb-mini-status-non-highlight">No submissions</div>
+              <div style="display: none;" id="globalStat0_1" class="globalStat"></div>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+        
+      </div>
+    
+      <div id="problemStatusWrapper1" class="problemStatusWrapper">
+        <div class="dsb-status-problem-title">Magicka</div>
+        
+        <!-- Input Stats -->
+        <table class="problemStatus">
+        <tbody>
+          <tr class="inputSetStatus">
+            <td id="inputName1_0" class="inputName">10pt</td>
+            <td class="status">
+              <div id="selfStat1_0" class="dsb-mini-status-non-highlight">No submissions</div>
+              <div style="display: block;" id="globalStat1_0" class="globalStat"><b>2438/2860 users</b> correct (85%)</div>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+        
+        <!-- Input Stats -->
+        <table class="problemStatus">
+        <tbody>
+          <tr class="inputSetStatus">
+            <td id="inputName1_1" class="inputName">15pt</td>
+            <td class="status">
+              <div id="selfStat1_1" class="dsb-mini-status-non-highlight">No submissions</div>
+              <div style="display: none;" id="globalStat1_1" class="globalStat"></div>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+        
+      </div>
+    
+      <div id="problemStatusWrapper2" class="problemStatusWrapper">
+        <div class="dsb-status-problem-title">Candy Splitting</div>
+        
+        <!-- Input Stats -->
+        <table class="problemStatus">
+        <tbody>
+          <tr class="inputSetStatus">
+            <td id="inputName2_0" class="inputName">10pt</td>
+            <td class="status">
+              <div id="selfStat2_0" class="dsb-mini-status-non-highlight">No submissions</div>
+              <div style="display: block;" id="globalStat2_0" class="globalStat"><b>1993/2243 users</b> correct (89%)</div>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+        
+        <!-- Input Stats -->
+        <table class="problemStatus">
+        <tbody>
+          <tr class="inputSetStatus">
+            <td id="inputName2_1" class="inputName">15pt</td>
+            <td class="status">
+              <div id="selfStat2_1" class="dsb-mini-status-non-highlight">No submissions</div>
+              <div style="display: none;" id="globalStat2_1" class="globalStat"></div>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+        
+      </div>
+    
+      <div id="problemStatusWrapper3" class="problemStatusWrapper">
+        <div class="dsb-status-problem-title">GoroSort</div>
+        
+        <!-- Input Stats -->
+        <table class="problemStatus">
+        <tbody>
+          <tr class="inputSetStatus">
+            <td id="inputName3_0" class="inputName">10pt</td>
+            <td class="status">
+              <div id="selfStat3_0" class="dsb-mini-status-non-highlight">No submissions</div>
+              <div style="display: block;" id="globalStat3_0" class="globalStat"><b>468/897 users</b> correct (52%)</div>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+        
+        <!-- Input Stats -->
+        <table class="problemStatus">
+        <tbody>
+          <tr class="inputSetStatus">
+            <td id="inputName3_1" class="inputName">20pt</td>
+            <td class="status">
+              <div id="selfStat3_1" class="dsb-mini-status-non-highlight">No submissions</div>
+              <div style="display: none;" id="globalStat3_1" class="globalStat"></div>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+        
+      </div>
+    
+    </div>
+  </div>
+  </div>
+  <div class="v-divider"></div>
+  <div class="v-divider"></div>
+  <!-- Mini Scoreboard -->
+  <div class="dsb-mini-tab-wrapper">
+    <div id="dsb-scoreboard-div">
+      <div id="dsb-scoreboard-header-div" onmouseover="this.style.cursor='pointer'" onclick="GCJ.toggleVisibility(
+              'dsb-scoreboard-table',
+              'dsb-scoreboard-panel-button',
+              '/codejam/contest/static/minus.gif',
+              '/codejam/contest/static/plus.gif')">
+          <img id="dsb-scoreboard-panel-button" src="Magicka_files/minus.gif">
+          &nbsp; Top Scores
+      </div>
+      <div id="dsb-scoreboard-table-wrap"><table style="display: block;" id="dsb-scoreboard-table"><tbody><tr class="dsb-scoreboard-row-even" id="sbRow_0" style="display: block;"><td title="" class="dsb-name-td" id="sbName_0">SkidanovAlexander</td><td class="dsb-score-td" id="sbScore_0">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_1" style="display: block;"><td title="" class="dsb-name-td" id="sbName_1">theycallhimtom</td><td class="dsb-score-td" id="sbScore_1">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_2" style="display: block;"><td title="" class="dsb-name-td" id="sbName_2">kmod</td><td class="dsb-score-td" id="sbScore_2">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_3" style="display: block;"><td title="" class="dsb-name-td" id="sbName_3">watashi</td><td class="dsb-score-td" id="sbScore_3">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_4" style="display: block;"><td title="" class="dsb-name-td" id="sbName_4">RAD.</td><td class="dsb-score-td" id="sbScore_4">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_5" style="display: block;"><td title="" class="dsb-name-td" id="sbName_5">Anton.Lunyov</td><td class="dsb-score-td" id="sbScore_5">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_6" style="display: block;"><td title="" class="dsb-name-td" id="sbName_6">w01fe</td><td class="dsb-score-td" id="sbScore_6">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_7" style="display: block;"><td title="" class="dsb-name-td" id="sbName_7">jakubr</td><td class="dsb-score-td" id="sbScore_7">100</td></tr><tr class="dsb-scoreboard-row-even" id="sbRow_8" style="display: block;"><td title="" class="dsb-name-td" id="sbName_8">Weiqi</td><td class="dsb-score-td" id="sbScore_8">100</td></tr><tr class="dsb-scoreboard-row-odd" id="sbRow_9" style="display: block;"><td title="" class="dsb-name-td" id="sbName_9">hos.lyric</td><td class="dsb-score-td" id="sbScore_9">100</td></tr></tbody></table></div>
+      <div class="dsb-mini-tab-link">
+        <a target="new" href="http://code.google.com/codejam/contest/scoreboard?c=975485">
+          Full scoreboard
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="right-panel">
+  <div style="visibility: hidden;" id="dsb-status-msg-wrapper" class="dsb-status-msg-wrapper" role="alert">
+    <div id="dsb-status-msg" class="dsb-status-msg">
+      <span id="dsb-status-msg-text"></span>
+      <span id="dsb-view-it-link">View it.</span>
+    </div>
+  </div>
+
+  <div id="dsb-contest-title-bar">
+  <div id="dsb-rank-etc">
+    <div id="dsb-time-remaining">
+      Time Remaining: <span id="contestTimer">16hr 37min</span>
+    </div>
+    <div id="dsb-current-rank-div">
+      Rank: <span id="dsb-current-rank-span">4426</span>
+    </div>
+    <div id="dsb-current-score-div">
+      Score: <span id="dsb-current-score-span">0</span>
+    </div>
+  </div>
+  
+    <b>miguelinho_28@hotmail.com</b> |
+    <a target="new" href="http://code.google.com/codejam/contest/scoreboard?c=975485">
+      Contest scoreboard</a> |
+    
+    <a href="http://code.google.com/_ah/logout?continue=https://www.google.com/accounts/Logout%3Fcontinue%3Dhttps://appengine.google.com/_ah/logout%253Fcontinue%253Dhttp://code.google.com/codejam%26service%3Dah">Sign out</a>
+  
+  </div>
+
+  <!-- Problem Statement -->
+  <div id="main-panel-border" class="dsb-blue-border">
+  <div id="dsb-border-inner">
+    <!-- Problem Statement Title -->
+    <h3 id="dsb-problem-title-div"><span style="color:#666">Problem B.</span> Magicka</h3>
+
+    
+    <div id="dsb-problem-page0" class="dsb-content-pages">
+      <!-- Problem Input File Selection -->
+      <div class="dsb-input-panel-text">
+        
+        <span>
+          
+          Confused? Read the quick-start guide
+          <a href="http://code.google.com/codejam/quickstart.html" target="_blank">here</a>.
+          
+        </span>
+        
+      </div>
+      <table><tbody id="dsb-input-form-table0"><tr><td class="dsb-input-table-description">Small input<br>10 points</td><td class="dsb-input-table-linktd"><div class="" id="dsb-action-box-wrap0-0"><div style="display: inline;" class="dsb-input-wrapper" id="dsb-input-wrapper0-0"><button style="display: inline;" id="dsb-input-start-button0-0" class="dsb-input-start-button">Solve A-small</button><span style="display: none;" id="dsb-input-link-plain0-0" class="dsb-input-link-span"><img src="Magicka_files/file.gif" class="dsb-input-link-img"><span id="dsb-input-link-plain-text0-0" class="dsb-input-link-text">Download A-small.in</span></span></div><span style="display: block;" id="dsb-input-table-caption0-0" class="dsb-input-table-caption">You may try multiple times, with penalties for wrong submissions.</span><span style="display: none;" id="dsb-resubmit-caption0-0" class="dsb-input-table-caption">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-0">resubmit</span> for <span id="dsb-resubmit-timer0-0"></span> minutes.<br>Only your last submission counts.</span><div><div style="display: none;" id="dsb-submit-form-div0-0" class="dsb-submit-form-div">temp</div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>10 points</td><td class="dsb-input-table-linktd"><div class="" id="dsb-action-box-wrap0-1"><div style="display: none;" class="dsb-input-wrapper" id="dsb-input-wrapper0-1"><button style="display: inline;" id="dsb-input-start-button0-1" class="dsb-input-start-button">Solve A-large</button><span style="display: none;" id="dsb-input-link-plain0-1" class="dsb-input-link-span"><img src="Magicka_files/file.gif" class="dsb-input-link-img"><span id="dsb-input-link-plain-text0-1" class="dsb-input-link-text"></span></span></div><span style="display: block;" id="dsb-input-table-caption0-1" class="dsb-input-table-caption">You must solve the small input first.<br>You will have 8 minutes to solve 1 input file. (Judged after contest.)</span><span style="display: none;" id="dsb-resubmit-caption0-1" class="dsb-input-table-caption">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link0-1">resubmit</span> for <span id="dsb-resubmit-timer0-1"></span> minutes.<br>Only your last submission counts.</span><div><div style="display: none;" id="dsb-submit-form-div0-1" class="dsb-submit-form-div">temp</div></div></div></td></tr></tbody></table>
+      <!-- Problem Statement -->
+      <div id="dsb-problem-content-div0" class="dsb-problem-content-div"><h3>Problem</h3>
+<p>
+Blue and Orange are friendly robots. An evil computer mastermind has 
+locked them up in separate hallways to test them, and then possibly give
+ them cake.
+</p>
+
+<p>
+Each hallway contains 100 buttons labeled with the positive integers {1,
+ 2, ..., 100}. Button k is always k meters from the start of the 
+hallway, and the robots both begin at button 1. Over the period of one 
+second, a robot can walk one meter in either direction, or it can press 
+the button at its position once, or it can stay at its position and not 
+press the button. To complete the test, the robots need to push a 
+certain sequence of buttons in a certain order. Both robots know the 
+full sequence in advance. How fast can they complete it?
+</p>
+
+<p>
+For example, let's consider the following button sequence:
+</p>
+
+<p><code>&nbsp;&nbsp;&nbsp;O 2, B 1, B 2, O 4</code></p>
+
+<p>
+Here, <code>O 2</code> means button 2 in Orange's hallway, <code>B 1</code>
+ means button 1 in Blue's hallway, and so on. The robots can push this 
+sequence of buttons in 6 seconds using the strategy shown below:
+</p><pre>Time | Orange           | Blue
+-----+------------------+-----------------
+  1  | Move to button 2 | Stay at button 1
+  2  | Push button 2    | Stay at button 1
+  3  | Move to button 3 | Push button 1
+  4  | Move to button 4 | Move to button 2
+  5  | Stay at button 4 | Push button 2
+  6  | Push button 4    | Stay at button 2
+</pre>
+Note that Blue has to wait until Orange has completely finished pushing <code>O 2</code> before it can start pushing <code>B 1</code>.
+<p></p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>. <b>T</b> test cases follow.
+</p>
+
+<p>
+Each test case consists of a single line beginning with a positive integer <b>N</b>, representing the number of buttons that need to be pressed. This is followed by <b>N</b> terms of the form "<b>R</b><sub>i</sub> <b>P</b><sub>i</sub>" where <b>R</b><sub>i</sub> is a robot color (always 'O' or 'B'), and <b>P</b><sub>i</sub> is a button position.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #x: y", where x is 
+the case number (starting from 1) and y is the minimum number of seconds
+ required for the robots to push the given buttons, in order.
+</p>
+
+<h3>Limits</h3>
+
+<p>
+1 ≤ <b>P</b><sub>i</sub> ≤ 100 for all i.
+</p>
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>T</b> ≤ 20.<br>
+1 ≤ <b>N</b> ≤ 10.
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+1 ≤ <b>N</b> ≤ 100.
+</p>
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+3<br>
+4 O 2 B 1 B 2 O 4<br>
+3 O 5 O 8 B 100<br>
+2 B 2 B 1<br>
+</code>
+</td>
+<td>
+<code>
+Case #1: 6<br>
+Case #2: 100<br>
+Case #3: 4<br>
+<br>
+</code>
+</td></tr></tbody></table>
+</div></div>
+    </div>
+    
+    <div style="display: block;" id="dsb-problem-page1" class="dsb-content-pages">
+      <!-- Problem Input File Selection -->
+      <div class="dsb-input-panel-text">
+        
+        <span>
+          
+          Confused? Read the quick-start guide
+          <a href="http://code.google.com/codejam/quickstart.html" target="_blank">here</a>.
+          
+        </span>
+        
+      </div>
+      <table><tbody id="dsb-input-form-table1"><tr><td class="dsb-input-table-description">Small input<br>10 points</td><td class="dsb-input-table-linktd"><div class="" id="dsb-action-box-wrap1-0"><div style="display: inline;" class="dsb-input-wrapper" id="dsb-input-wrapper1-0"><button style="display: inline;" id="dsb-input-start-button1-0" class="dsb-input-start-button">Solve B-small</button><span style="display: none;" id="dsb-input-link-plain1-0" class="dsb-input-link-span"><img src="Magicka_files/file.gif" class="dsb-input-link-img"><span id="dsb-input-link-plain-text1-0" class="dsb-input-link-text">Download B-small.in</span></span></div><span style="display: block;" id="dsb-input-table-caption1-0" class="dsb-input-table-caption">You may try multiple times, with penalties for wrong submissions.</span><span style="display: none;" id="dsb-resubmit-caption1-0" class="dsb-input-table-caption">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-0">resubmit</span> for <span id="dsb-resubmit-timer1-0"></span> minutes.<br>Only your last submission counts.</span><div><div style="display: none;" id="dsb-submit-form-div1-0" class="dsb-submit-form-div">temp</div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>15 points</td><td class="dsb-input-table-linktd"><div class="" id="dsb-action-box-wrap1-1"><div style="display: none;" class="dsb-input-wrapper" id="dsb-input-wrapper1-1"><button style="display: inline;" id="dsb-input-start-button1-1" class="dsb-input-start-button">Solve B-large</button><span style="display: none;" id="dsb-input-link-plain1-1" class="dsb-input-link-span"><img src="Magicka_files/file.gif" class="dsb-input-link-img"><span id="dsb-input-link-plain-text1-1" class="dsb-input-link-text"></span></span></div><span style="display: block;" id="dsb-input-table-caption1-1" class="dsb-input-table-caption">You must solve the small input first.<br>You will have 8 minutes to solve 1 input file. (Judged after contest.)</span><span style="display: none;" id="dsb-resubmit-caption1-1" class="dsb-input-table-caption">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link1-1">resubmit</span> for <span id="dsb-resubmit-timer1-1"></span> minutes.<br>Only your last submission counts.</span><div><div style="display: none;" id="dsb-submit-form-div1-1" class="dsb-submit-form-div">temp</div></div></div></td></tr></tbody></table>
+      <!-- Problem Statement -->
+      <div id="dsb-problem-content-div1" class="dsb-problem-content-div"><h3>Introduction</h3>
+<p>
+Magicka™ is an action-adventure game developed by Arrowhead Game 
+Studios.  In Magicka you play a wizard, invoking and combining elements 
+to create Magicks.  This problem has a similar idea, but it does not 
+assume that you have played Magicka.
+</p>
+<p>
+Note: "invoke" means "call on."  For this problem, it is a technical term and you don't need to know its normal English meaning.
+</p>
+<h3>Problem</h3>
+<p>
+As a wizard, you can <b>invoke</b> eight elements, which are the "base" 
+elements.  Each base element is a single character from {Q, W, E, R, A, 
+S, D, F}.  When you invoke an element, it gets appended to your <b>element list</b>.
+  For example: if you invoke W and then invoke A, (we'll call that 
+"invoking WA" for short) then your element list will be [W, A].
+</p>
+<p>
+We will specify pairs of base elements that <b>combine</b> to form 
+non-base elements (the other 18 capital letters).  For example, Q and F 
+might combine to form T.  If the two elements from a pair appear at the 
+end of the element list, then both elements of the pair will be 
+immediately removed, and they will be replaced by the element they form.
+  In the example above, if the element list looks like [A, Q, F] or [A, 
+F, Q] at any point, it will become [A, T].
+</p>
+<p>
+We will specify pairs of base elements that are <b>opposed</b> to each 
+other.  After you invoke an element, if it isn't immediately combined to
+ form another element, and it is opposed to something in your element 
+list, then your element list will be cleared.
+</p>
+<p>
+For example, suppose Q and F combine to make T.  R and F are opposed to 
+each other.  Then invoking the following things (in order, from left to 
+right) will have the following results:
+</p><ul>
+<li>QF → [T]  (Q and F combine to form T)</li>
+<li>QEF → [Q, E, F] (Q and F can't combine because they were never at the end of the element list together)</li>
+<li>RFE → [E] (F and R are opposed, so the list is cleared; then E is invoked)</li>
+<li>REF → [] (F and R are opposed, so the list is cleared)</li>
+<li>RQF → [R, T] (QF combine to make T, so the list is not cleared)</li>
+<li>RFQ → [Q] (F and R are opposed, so the list is cleared)</li>
+</ul>
+<p></p>
+<p>
+Given a list of elements to invoke, what will be in the element list when you're done?
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>.  <b>T</b> test cases follow.  Each test case consists of a single line, containing the following space-separated elements in order:
+</p>
+<p>
+First an integer <b>C</b>, followed by <b>C</b> strings, each containing
+ three characters: two base elements followed by a non-base element.  
+This indicates that the two base elements combine to form the non-base 
+element.  Next will come an integer <b>D</b>, followed by <b>D</b> strings, each containing two characters: two base elements that are opposed to each other.  Finally there will be an integer <b>N</b>, followed by a single string containing <b>N</b>
+ characters: the series of base elements you are to invoke.  You will 
+invoke them in the order they appear in the string (leftmost character 
+first, and so on).
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #x: y", where x is 
+the case number (starting from 1) and y is a list in the format "[e<sub>0</sub>, e<sub>1</sub>, ...]" where e<sub>i</sub> is the i<sup>th</sup> element of the final element list.  Please see the sample output for examples.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+Each pair of base elements may only appear together in one combination, 
+though they may appear in a combination and also be opposed to each 
+other.<br>
+No base element may be opposed to itself.<br>
+Unlike in the computer game Magicka, there is no limit to the length of the element list.
+</p>
+
+<h4>Small dataset</h4>
+<p>
+0 ≤ <b>C</b> ≤ 1.<br>
+0 ≤ <b>D</b> ≤ 1.<br>
+1 ≤ <b>N</b> ≤ 10.<br>
+</p>
+
+<h4>Large dataset</h4>
+<p>
+0 ≤ <b>C</b> ≤ 36.<br>
+0 ≤ <b>D</b> ≤ 28.<br>
+1 ≤ <b>N</b> ≤ 100.<br>
+</p>
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+5<br>
+0 0 2 EA<br>
+1 QRI 0 4 RRQR<br>
+1 QFT 1 QF 7 FAQFDFQ<br>
+1 EEZ 1 QE 7 QEEEERA<br>
+0 1 QW 2 QW<br>
+</code>
+</td>
+<td>
+<code>
+Case #1: [E, A]<br>
+Case #2: [R, I, R]<br>
+Case #3: [F, D, T]<br>
+Case #4: [Z, E, R, A]<br>
+Case #5: []<br>
+</code>
+</td></tr></tbody></table>
+</div>
+<p>
+Magicka™ is a trademark of Paradox Interactive AB.  Paradox Interactive 
+AB does not endorse and has no involvement with Google Code Jam.
+</p></div>
+    </div>
+    
+    <div id="dsb-problem-page2" class="dsb-content-pages">
+      <!-- Problem Input File Selection -->
+      <div class="dsb-input-panel-text">
+        
+        <span>
+          
+          Confused? Read the quick-start guide
+          <a href="http://code.google.com/codejam/quickstart.html" target="_blank">here</a>.
+          
+        </span>
+        
+      </div>
+      <table><tbody id="dsb-input-form-table2"><tr><td class="dsb-input-table-description">Small input<br>10 points</td><td class="dsb-input-table-linktd"><div class="" id="dsb-action-box-wrap2-0"><div style="display: inline;" class="dsb-input-wrapper" id="dsb-input-wrapper2-0"><button style="display: inline;" id="dsb-input-start-button2-0" class="dsb-input-start-button">Solve C-small</button><span style="display: none;" id="dsb-input-link-plain2-0" class="dsb-input-link-span"><img src="Magicka_files/file.gif" class="dsb-input-link-img"><span id="dsb-input-link-plain-text2-0" class="dsb-input-link-text">Download C-small.in</span></span></div><span style="display: block;" id="dsb-input-table-caption2-0" class="dsb-input-table-caption">You may try multiple times, with penalties for wrong submissions.</span><span style="display: none;" id="dsb-resubmit-caption2-0" class="dsb-input-table-caption">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-0">resubmit</span> for <span id="dsb-resubmit-timer2-0"></span> minutes.<br>Only your last submission counts.</span><div><div style="display: none;" id="dsb-submit-form-div2-0" class="dsb-submit-form-div">temp</div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>15 points</td><td class="dsb-input-table-linktd"><div class="" id="dsb-action-box-wrap2-1"><div style="display: none;" class="dsb-input-wrapper" id="dsb-input-wrapper2-1"><button style="display: inline;" id="dsb-input-start-button2-1" class="dsb-input-start-button">Solve C-large</button><span style="display: none;" id="dsb-input-link-plain2-1" class="dsb-input-link-span"><img src="Magicka_files/file.gif" class="dsb-input-link-img"><span id="dsb-input-link-plain-text2-1" class="dsb-input-link-text"></span></span></div><span style="display: block;" id="dsb-input-table-caption2-1" class="dsb-input-table-caption">You must solve the small input first.<br>You will have 8 minutes to solve 1 input file. (Judged after contest.)</span><span style="display: none;" id="dsb-resubmit-caption2-1" class="dsb-input-table-caption">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link2-1">resubmit</span> for <span id="dsb-resubmit-timer2-1"></span> minutes.<br>Only your last submission counts.</span><div><div style="display: none;" id="dsb-submit-form-div2-1" class="dsb-submit-form-div">temp</div></div></div></td></tr></tbody></table>
+      <!-- Problem Statement -->
+      <div id="dsb-problem-content-div2" class="dsb-problem-content-div"><h3>Problem</h3>
+
+<p>
+Sean and Patrick are brothers who just got a nice bag of candy from 
+their parents.  Each piece of candy has some positive integer value, and
+ the children want to divide the candy between them.   First, Sean will 
+split the candy into two piles, and choose one to give to Patrick. Then 
+Patrick will try to calculate the value of each pile, where the value of
+ a pile is the sum of the values of all pieces of candy in that pile; if
+ he decides the piles don't have equal value, he will start crying.
+</p>
+
+<p>
+Unfortunately, Patrick is very young and doesn't know how to add properly.  He <i>almost</i>
+ knows how to add numbers in binary; but when he adds two 1s together, 
+he always forgets to carry the remainder to the next bit. For example, 
+if he wants to sum 12 (1100 in binary) and 5 (101 in binary), he will 
+add the two rightmost bits correctly, but in the third bit he will 
+forget to carry the remainder to the next bit:
+</p>
+
+<pre>  1100
++ 0101
+------
+  1001
+</pre>
+
+<p>
+So after adding the last bit without the carry from the third bit, the 
+final result is 9 (1001 in binary).  Here are some other examples of 
+Patrick's math skills:
+</p>
+
+<pre>5 + 4 = 1
+7 + 9 = 14
+50 + 10 = 56
+</pre>
+
+<p>
+Sean is very good at adding, and he wants to take as much value as he 
+can without causing his little brother to cry.  If it's possible, he 
+will split the bag of candy into two non-empty piles such that Patrick 
+thinks that both have the same value. Given the values of all pieces of 
+candy in the bag, we would like to know if this is possible; and, if 
+it's possible, determine the maximum possible value of Sean's pile.
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>.  <b>T</b> test cases follow.  Each test case is described in two lines. The first line contains a single integer <b>N</b>, denoting the number of candies in the bag. The next line contains the <b>N</b> integers <b>C<sub>i</sub></b> separated by single spaces, which denote the value of each piece of candy in the bag.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #x: y", where x is 
+the case number (starting from 1). If it is impossible for Sean to keep 
+Patrick from crying, y should be the word "NO". Otherwise, y should be 
+the value of the pile of candies that Sean will keep.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100.<br>
+1 ≤ <b>C<sub>i</sub></b> ≤ 10<sup>6</sup>.<br>
+</p>
+
+<h4>Small dataset</h4>
+<p>
+2 ≤ <b>N</b> ≤ 15.
+</p>
+
+<h4>Large dataset</h4>
+<p>
+2 ≤ <b>N</b> ≤ 1000.
+</p>
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+2<br>
+5<br>
+1 2 3 4 5<br>
+3<br>
+3 5 6<br>
+</code>
+</td>
+<td>
+<code>
+Case #1: NO<br>
+Case #2: 11<br>
+<br>
+</code>
+</td></tr></tbody></table>
+</div>
+</div>
+    </div>
+    
+    <div id="dsb-problem-page3" class="dsb-content-pages">
+      <!-- Problem Input File Selection -->
+      <div class="dsb-input-panel-text">
+        
+        <span>
+          
+          Confused? Read the quick-start guide
+          <a href="http://code.google.com/codejam/quickstart.html" target="_blank">here</a>.
+          
+        </span>
+        
+      </div>
+      <table><tbody id="dsb-input-form-table3"><tr><td class="dsb-input-table-description">Small input<br>10 points</td><td class="dsb-input-table-linktd"><div class="" id="dsb-action-box-wrap3-0"><div style="display: inline;" class="dsb-input-wrapper" id="dsb-input-wrapper3-0"><button style="display: inline;" id="dsb-input-start-button3-0" class="dsb-input-start-button">Solve D-small</button><span style="display: none;" id="dsb-input-link-plain3-0" class="dsb-input-link-span"><img src="Magicka_files/file.gif" class="dsb-input-link-img"><span id="dsb-input-link-plain-text3-0" class="dsb-input-link-text">Download D-small.in</span></span></div><span style="display: block;" id="dsb-input-table-caption3-0" class="dsb-input-table-caption">You may try multiple times, with penalties for wrong submissions.</span><span style="display: none;" id="dsb-resubmit-caption3-0" class="dsb-input-table-caption">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-0">resubmit</span> for <span id="dsb-resubmit-timer3-0"></span> minutes.<br>Only your last submission counts.</span><div><div style="display: none;" id="dsb-submit-form-div3-0" class="dsb-submit-form-div">temp</div></div></div></td></tr><tr><td class="dsb-input-table-description">Large input<br>20 points</td><td class="dsb-input-table-linktd"><div class="" id="dsb-action-box-wrap3-1"><div style="display: none;" class="dsb-input-wrapper" id="dsb-input-wrapper3-1"><button style="display: inline;" id="dsb-input-start-button3-1" class="dsb-input-start-button">Solve D-large</button><span style="display: none;" id="dsb-input-link-plain3-1" class="dsb-input-link-span"><img src="Magicka_files/file.gif" class="dsb-input-link-img"><span id="dsb-input-link-plain-text3-1" class="dsb-input-link-text"></span></span></div><span style="display: block;" id="dsb-input-table-caption3-1" class="dsb-input-table-caption">You must solve the small input first.<br>You will have 8 minutes to solve 1 input file. (Judged after contest.)</span><span style="display: none;" id="dsb-resubmit-caption3-1" class="dsb-input-table-caption">Your submission was received. You can still <span class="dsb-input-link-text" id="dsb-resubmit-link3-1">resubmit</span> for <span id="dsb-resubmit-timer3-1"></span> minutes.<br>Only your last submission counts.</span><div><div style="display: none;" id="dsb-submit-form-div3-1" class="dsb-submit-form-div">temp</div></div></div></td></tr></tbody></table>
+      <!-- Problem Statement -->
+      <div id="dsb-problem-content-div3" class="dsb-problem-content-div"><h3>Problem</h3>
+<p>
+Goro has 4 arms. Goro is very strong. You don't mess with Goro. Goro needs to sort an array of <b>N</b>
+ different integers. Algorithms are not Goro's strength; strength is 
+Goro's strength. Goro's plan is to use the fingers on two of his hands 
+to hold down several elements of the array and hit the table with his 
+third and fourth fists as hard as possible. This will make the unsecured
+ elements of the array fly up into the air, get shuffled randomly, and 
+fall back down into the empty array locations.
+</p>
+
+<p>
+Goro wants to sort the array as quickly as possible. How many hits will 
+it take Goro to sort the given array, on average, if he acts 
+intelligently when choosing which elements of the array to hold down 
+before each hit of the table?
+</p>
+
+<p>
+More precisely, before each hit, Goro may choose any subset of the 
+elements of the array to freeze in place. He may choose differently 
+depending on the outcomes of previous hits. Each hit permutes the 
+unfrozen elements uniformly at random. Each permutation is equally 
+likely.
+</p>
+
+<h3>Input</h3>
+<p>
+The first line of the input gives the number of test cases, <b>T</b>.  <b>T</b> test cases follow.  Each one will consist of two lines. The first line will give the number <b>N</b>. The second line will list the <b>N</b> elements of the array in their initial order.
+</p>
+
+<h3>Output</h3>
+<p>
+For each test case, output one line containing "Case #<b>x</b>: <b>y</b>", where <b>x</b> is the case number (starting from 1) and <b>y</b>
+ is the expected number of hit-the-table operations when following the 
+best hold-down strategy. Answers with an absolute or relative error of 
+at most 10<sup>-6</sup> will be considered correct.
+</p>
+
+<h3>Limits</h3>
+<p>
+1 ≤ <b>T</b> ≤ 100;<br>
+The second line of each test case will contain a permutation of the <b>N</b>
+smallest positive integers.<br>
+Goro has more than <b>N</b> fingers on each hand.
+</p>
+
+<h4>Small dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 10;
+</p>
+
+<h4>Large dataset</h4>
+<p>
+1 ≤ <b>N</b> ≤ 1000;
+</p>
+
+<h3>Sample</h3>
+<div class="problem-io-wrapper">
+<table>
+<tbody><tr>
+<td>
+<br>
+<span class="io-table-header">Input</span>
+<br>&nbsp;
+</td>
+<td>
+<br>
+<span class="io-table-header">Output</span>
+<br>&nbsp;
+</td>
+</tr>
+<tr>
+<td>
+<code>
+3<br>
+2<br>
+2 1<br>
+3<br>
+1 3 2<br>
+4<br>
+2 1 4 3<br>
+</code>
+</td>
+<td>
+<code>
+Case #1: 2.000000<br>
+Case #2: 2.000000<br>
+Case #3: 4.000000<br>
+<br>
+</code>
+</td></tr></tbody></table>
+</div>
+
+<h3>Explanation</h3>
+In test case #3, one possible strategy is to hold down the two leftmost 
+elements first. Elements 3 and 4 will be free to move. After a table 
+hit, they will land in the correct order [3, 4] with probability 1/2 and
+ in the wrong order [4, 3] with probability 1/2. Therefore, on average 
+it will take 2 hits to arrange them in the correct order. After that, 
+Goro can hold down elements 3 and 4 and hit the table until 1 and 2 land
+ in the correct order, which will take another 2 hits, on average. The 
+total is then <nobr>2 + 2 = 4</nobr> hits.
+</div>
+    </div>
+    
+
+    <div id="dsb-analysis-page" class="dsb-content-pages">
+    
+    </div>
+
+    <div style="display: none;" id="dsb-clarification-page" class="dsb-content-pages">
+      <!-- The clarifications table -->
+      <div id="clarTableDiv" class="clarTableWrapper"></div><div>
+        <table style="display: block;" id="dsb-clarification-table">
+          <colgroup span="9">
+            <col width="16%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%"><col width="2%">
+            <col width="10%"><col width="2%">
+            <col width="28%">
+          </colgroup>
+          <thead>
+            <tr>
+            <th>Category</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Asked</th><th>&nbsp;</th>
+            <th>Question</th><th>&nbsp;</th>
+            <th class="clarTimeColumn">Answered</th><th>&nbsp;</th>
+            <th>Answer</th>
+            </tr>
+          </thead>
+          <tbody id="dsb-clarification-tbody"><tr class="dsb-clar-tr dsb-clar-tr-odd"><td class="clarProbTd">Bot Trust</td><td></td><td class="clarTimeColumn">5:08:33</td><td></td><td><i>The buttons can be pushed again or the robot has to wait for the next order?</i></td><td></td><td class="clarTimeColumn">5:08:50</td><td></td><td><i>Please read the problem statement more carefully.</i></td></tr><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">Candy Splitting<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">2:59:05</td><td></td><td><i>When
+ Sean chooses which pieces of candy to put in each pile, do they have to
+ be contiguous in the input?  For example, if the input is [2, 3, 1] can
+ he split into [2, 1] and [3]?</i></td><td></td><td class="clarTimeColumn">3:03:54</td><td></td><td><i>They don't have to be contiguous, so yes, he can do that if he wants; though it might not be the best possible choice.</i></td></tr><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">Candy Splitting<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">41:30</td><td></td><td><i>Does Patrick add the values in the order they appear? e.g. in [5, 6, 7] does he add (5 + 6) + 7?</i></td><td></td><td class="clarTimeColumn">51:01</td><td></td><td><i>Yes, he adds them in order from left to right.</i></td></tr><tr class="dsb-clar-tr dsb-clar-tr-announcement"><td class="clarProbTd">[General]<br><span style="color: #666">Announcement</span></td><td></td><td class="clarTimeColumn">7:19</td><td></td><td><i>How many points do we need to advance to Round 1?</i></td><td></td><td class="clarTimeColumn">9:58</td><td></td><td><i>25 points.  Remember that you may get Large inputs wrong, so it might be worth solving something extra just in case.</i></td></tr></tbody>
+        </table>
+      </div>
+      <div style="display: block;" id="dsb-submit-clarification">
+        <!-- The link to ask a clarification -->
+        <div style="padding: 0.5em 0 0.3em 0;">
+          <b>Ask a question:</b>
+        </div>
+        <!-- The form for asking clarification -->
+        <div>
+          <form onsubmit="return GCJ.submitClarification(this);"><div style="display:none;"><input name="csrfmiddlewaretoken" value="NjY5YzE5OWEyNjIzMzdjYWM4Mzg5YjJkMDE1NjdkNWF8MTAyODYwMDk5MzEyMDU4ODU2MjYzfHwxMzA0NzQ3ODc5NTY0Mjg2" type="hidden"></div>
+            <div><textarea rows="5" cols="60" name="q"></textarea></div>
+            <div style="padding-top: 0.3em">
+            <select name="problem">
+              <option value="_" selected="selected">[General]</option>
+              
+              <option value="1080487">Bot Trust</option>
+              
+              <option value="1026487">Magicka</option>
+              
+              <option value="1059486">Candy Splitting</option>
+              
+              <option value="992486">GoroSort</option>
+              
+            </select>
+            &nbsp;
+            <input id="dsb-submit-clarification-button" value="Ask" type="submit">
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- Too many pending clarifications -->
+      <div id="dsb-cannot-ask-question-text" style="font-weight: bold; padding: 0.5em 0pt 0.3em; display: none;">
+        
+        There is a maximum of 8 pending questions.
+        You can ask more questions as soon as we have responded to some of your
+        questions.
+        
+      </div>
+
+    </div>
+
+    <div style="display: none;" id="dsb-submissions-page" class="dsb-content-pages">
+      <div id="dsb-submissions-status" class="dsb-sub-status-msg">You have 3 submissions.</div>
+      <table id="dsb-submissions-table" class="dsb-sub-main-table" style="display: block;">
+      <thead>
+        <tr id="dsb-sub-main-table-header">
+          <th class="dsb-sub-row-id-width">ID</th>
+          <th class="dsb-sub-name-width">Problem</th>
+          <th class="dsb-sub-difficulty-width">Size</th>
+          <th class="dsb-sub-input-width">Input</th>
+          <th class="dsb-sub-output-width">Output</th>
+          <th class="dsb-sub-source-width">Solution</th>
+          <th class="dsb-sub-status-width">Status</th>
+          <th class="dsb-sub-time-width">Time</th>
+        </tr>
+      </thead>
+      <tbody id="dsb-submissions-rows">
+      <tr class="dsb-sub-odd-row" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8yDA"><td class="dsb-sub-row-id-width">3</td><td class="dsb-sub-name-width">Bot Trust</td><td class="dsb-sub-difficulty-width">Small</td><td class="dsb-sub-input-width"><span class="dsb-sub-download-link-span"><img src="Magicka_files/download.png"></span></td><td class="dsb-sub-output-width"><span class="dsb-sub-download-link-span" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8yDA-output-link"><img src="Magicka_files/download.png"></span></td><td class="dsb-sub-source-width"><span class="dsb-sub-download-link-span" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8yDA-source-link"><img src="Magicka_files/download.png"></span></td><td class="dsb-sub-status-width" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8yDA-status">Incorrect</td><td class="dsb-sub-status-width" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8yDA-time">5h 36m 25s</td></tr><tr class="dsb-sub-even-row" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8xDA"><td class="dsb-sub-row-id-width">2</td><td class="dsb-sub-name-width">Bot Trust</td><td class="dsb-sub-difficulty-width">Small</td><td class="dsb-sub-input-width"><span class="dsb-sub-download-link-span"><img src="Magicka_files/download.png"></span></td><td class="dsb-sub-output-width"><span class="dsb-sub-download-link-span" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8xDA-output-link"><img src="Magicka_files/download.png"></span></td><td class="dsb-sub-source-width"><span class="dsb-sub-download-link-span" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8xDA-source-link"><img src="Magicka_files/download.png"></span></td><td class="dsb-sub-status-width" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8xDA-status">Incorrect</td><td class="dsb-sub-status-width" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8xDA-time">4h 49m 53s</td></tr><tr class="dsb-sub-odd-row" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8wDA"><td class="dsb-sub-row-id-width">1</td><td class="dsb-sub-name-width">Bot Trust</td><td class="dsb-sub-difficulty-width">Small</td><td class="dsb-sub-input-width"><span class="dsb-sub-download-link-span"><img src="Magicka_files/download.png"></span></td><td class="dsb-sub-output-width"><span class="dsb-sub-download-link-disabled-span" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8wDA-output-link"></span></td><td class="dsb-sub-source-width"><span class="dsb-sub-download-link-disabled-span" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8wDA-source-link"></span></td><td class="dsb-sub-status-width" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8wDA-status">Time Expired</td><td class="dsb-sub-status-width" id="sub-agxjb2RlamFtLXByb2RydQsSDHVzZXJfcHJvZmlsZSIXdT0xMDI4NjAwOTkzMTIwNTg4NTYyNjMMCxIOc2NvcmVib2FyZF9yb3ciIHU9MTAyODYwMDk5MzEyMDU4ODU2MjYzOmM9OTc1NDg1DAsSCnN1Ym1pc3Npb24iCHN1Ym1fMF8wDA-time">3h 46m 04s</td></tr></tbody>
+      </table>
+    </div>
+
+  </div>
+  </div>
+</div>
+
+</div>
+
+<div style="display: none;" id="dsb-loading-message-div">Google Code Jam loading...</div>
+
+<div style="height: 3em; clear: both;"></div>
+
+
+
+
+<div id="footer">
+  
+  <span id="copyright">© 2008-2011 Google</span>
+  <a href="http://www.google.com/">Google Home</a> -
+  <a href="http://code.google.com/codejam/terms.html">Terms and Conditions</a><br><br>
+  <a href="http://code.google.com/appengine"><img src="Magicka_files/appengine-noborder-120x30.gif"></a>
+  
+</div>
+
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-21302427-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script');
+    ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+
+<div style="height: 1em">&nbsp;</div>
+
+<script type="text/javascript">
+GCJ.initHistory();
+</script><input value="s=p1" name="history_state0" id="history_state0" style="display: none;" type="text">
+
+
+
+
+</div></body></html>
